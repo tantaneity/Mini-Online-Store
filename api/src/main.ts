@@ -17,12 +17,14 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api/docs', app, document);
+  SwaggerModule.setup('mini-store/api/docs', app, document);
 
   const port = process.env.PORT || 7010;
   await app.listen(port);
 
-  console.log(`Application is running on: http://localhost:${port}/api`);
-  console.log(`Swagger documentation: http://localhost:${port}/api/docs`);
+  console.log(
+    `Application is running on: http://localhost:${port}/mini-store/api`,
+    `Swagger documentation: http://localhost:${port}/mini-store/api/docs`,
+  );
 }
 void bootstrap();
