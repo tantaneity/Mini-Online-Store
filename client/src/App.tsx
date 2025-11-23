@@ -24,7 +24,7 @@ export default function App() {
   }, [token, fetchCurrentUser]);
 
   return (
-    <BrowserRouter basename="/mini-store">
+    <BrowserRouter basename="/app/mini-store">
       <div className="min-h-screen flex flex-col bg-neutral-50 dark:bg-neutral-900 transition-colors duration-300">
         <Header />
         <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
