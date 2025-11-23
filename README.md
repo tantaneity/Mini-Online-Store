@@ -2,7 +2,8 @@
 
 > Full-stack e-commerce platform with NestJS backend and React frontend
 
-Test it: https://api.tantane.me/mini-store/api/docs
+Swagger: https://api.tantane.me/mini-store/api/docs
+Compodoc: https://api.tantane.me/mini-store/compodoc/
 
 
 ## Table of Contents
