@@ -7,6 +7,7 @@
 - Swagger: https://api.tantane.me/mini-store/api/docs
 - Compodoc: https://api.tantane.me/mini-store/compodoc/
 - Client: https://tantane.me/app/mini-store/
+- Storybook: https://api.tantane.me/mini-store/storybook/
 
 ## Table of Contents
 
