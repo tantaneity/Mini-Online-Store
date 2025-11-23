@@ -8,6 +8,10 @@ dist/
 build/
 dist-ssr/
 
+# Documentation (generated)
+docs/
+storybook-static/
+
 # Logs
 *.log
 npm-debug.log*
