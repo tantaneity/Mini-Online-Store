@@ -6,7 +6,7 @@ import { globalValidationPipe } from './common/pipes/validation.pipe';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.setGlobalPrefix('api');
+  app.setGlobalPrefix('mini-store/api');
   app.useGlobalPipes(globalValidationPipe);
   app.enableCors();
 
@@ -17,7 +17,7 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('mini-store/api/docs', app, document);
+  SwaggerModule.setup('docs', app, document);
 
   const port = process.env.PORT || 7010;
   await app.listen(port);
